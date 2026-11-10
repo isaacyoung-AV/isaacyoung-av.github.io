@@ -73,6 +73,7 @@ h1{font-size:clamp(56px,11vw,148px);font-weight:900;letter-spacing:-.045em;line-
 .hero-tags li:nth-child(4n){border-color:rgba(10,163,127,.28)}
 
 /* SECTIONS */
+.section,.footer{scroll-margin-top:80px}
 .section{padding:104px 0;border-top:1px solid var(--line)}
 .kicker{font:600 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-hi);margin:0 0 18px}
 h2{font-size:clamp(32px,4.4vw,52px);font-weight:850;margin-bottom:44px}
@@ -119,9 +120,10 @@ h2{font-size:clamp(32px,4.4vw,52px);font-weight:850;margin-bottom:44px}
 
 /* SKILLS */
 .certs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:44px}
-.cert{display:flex;align-items:center;gap:18px;padding:22px 24px;border-radius:var(--radius);border:1px solid rgba(15,143,191,.45);
+.cert{display:flex;align-items:center;gap:18px;padding:22px 24px;min-width:0;border-radius:var(--radius);border:1px solid rgba(15,143,191,.45);
   background:linear-gradient(135deg,rgba(15,143,191,.16),rgba(15,143,191,.03))}
-.cert h3{font-size:18px;margin-bottom:4px}
+.cert h3{font-size:18px;line-height:1.25;margin-bottom:4px}
+.cert > div{min-width:0}
 .cert p{margin:0;color:var(--muted);font-size:14px}
 .cert-badge{flex:none;display:grid;place-items:center;width:68px;height:68px;border-radius:12px;background:var(--cyan);color:#fff;font:800 12px/1 var(--mono);letter-spacing:.08em}
 .cert-badge-a{background:var(--green)}
@@ -164,6 +166,7 @@ h2{font-size:clamp(32px,4.4vw,52px);font-weight:850;margin-bottom:44px}
   .about-portrait img{width:200px}
   .pillars{grid-template-columns:1fr 1fr}
   .skill-groups{grid-template-columns:1fr;gap:28px}
+  .certs{grid-template-columns:1fr}
   .contact-list{grid-template-columns:1fr 1fr}
 }
 @media (max-width:720px){
